@@ -1,4 +1,6 @@
-Transportation Type,GHG emissions (gCO2e/km)
-Car,209.64666666666668
-Bus,104.71
-Scooter,202.0
+Transportation Type,GHG emissions (gCO2e/km),Green Score
+Car-average,209.64666666666668,25.906815102786112
+Car-max,282.95,0.0
+Bus,104.71,62.99346174235731
+Scooter,202.0,28.609294928432575
+Car-pool-1person,52.41166666666667,81.47670377569654
