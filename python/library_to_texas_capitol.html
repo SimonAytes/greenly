@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_10796969489446dbb07ee077bc841a19 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_10796969489446dbb07ee077bc841a19" ></div>
+        
+</body>
+<script>    
+    
+            var map_10796969489446dbb07ee077bc841a19 = L.map(
+                "map_10796969489446dbb07ee077bc841a19",
+                {
+                    center: [30.4027446, -97.7237614],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_10796969489446dbb07ee077bc841a19);
+
+            
+
+        
+    
+            var tile_layer_31f45e4748874f8b9d4ecaca2d63f10f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_10796969489446dbb07ee077bc841a19);
+        
+    
+
+        function geo_json_b5ef2f8a7d694b60bb38510bb6f67d56_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b5ef2f8a7d694b60bb38510bb6f67d56 = L.geoJson(null, {
+                onEachFeature: geo_json_b5ef2f8a7d694b60bb38510bb6f67d56_onEachFeature,
+            
+        });
+
+        function geo_json_b5ef2f8a7d694b60bb38510bb6f67d56_add (data) {
+            geo_json_b5ef2f8a7d694b60bb38510bb6f67d56
+                .addData(data)
+                .addTo(map_10796969489446dbb07ee077bc841a19);
+        }
+            geo_json_b5ef2f8a7d694b60bb38510bb6f67d56_add({"coordinates": [[-97.73866, 30.27419], [-97.73892, 30.2735], [-97.73895, 30.27341], [-97.7389, 30.27339], [-97.73877, 30.27329], [-97.73839, 30.27318], [-97.73825, 30.27314], [-97.73828, 30.27308], [-97.73858, 30.27227], [-97.73862, 30.27215], [-97.73866, 30.27206], [-97.7387, 30.27196], [-97.73884, 30.27158], [-97.73887, 30.27149], [-97.73897, 30.27121], [-97.73901, 30.27112], [-97.73905, 30.27102], [-97.73919, 30.27064], [-97.73932, 30.27029], [-97.73936, 30.27019], [-97.7394, 30.27008], [-97.73953, 30.26972], [-97.73956, 30.26964], [-97.73968, 30.26934], [-97.73971, 30.26924], [-97.73983, 30.26927], [-97.74015, 30.26937], [-97.74032, 30.26941], [-97.74069, 30.26952], [-97.74078, 30.26954], [-97.7409, 30.26958], [-97.74144, 30.26972], [-97.74164, 30.26978], [-97.74197, 30.26987], [-97.74212, 30.26991], [-97.74229, 30.26996], [-97.74282, 30.27011], [-97.74334, 30.27026], [-97.74344, 30.27028], [-97.74347, 30.27019], [-97.7436, 30.26985], [-97.74374, 30.26947], [-97.74375, 30.26945], [-97.74378, 30.26936], [-97.74382, 30.26926], [-97.74395, 30.26891], [-97.74409, 30.26853], [-97.74413, 30.26844], [-97.74417, 30.26834], [-97.74444, 30.2676], [-97.74447, 30.26751], [-97.74451, 30.2674], [-97.74465, 30.26703], [-97.74469, 30.26694], [-97.74479, 30.26666], [-97.74482, 30.26657], [-97.74486, 30.26647], [-97.745, 30.2661], [-97.74514, 30.26573], [-97.74516, 30.26568], [-97.74518, 30.26562], [-97.74519, 30.26559], [-97.74521, 30.26554], [-97.74529, 30.26533], [-97.7455, 30.26477], [-97.74553, 30.26469], [-97.74556, 30.2646], [-97.74564, 30.26441], [-97.74566, 30.26434], [-97.74567, 30.26431], [-97.74583, 30.26388], [-97.74587, 30.26376], [-97.746, 30.2638], [-97.74629, 30.26388], [-97.74636, 30.2639], [-97.74645, 30.26396], [-97.74654, 30.26398], [-97.74682, 30.26406], [-97.74689, 30.26408], [-97.74699, 30.26407], [-97.74797, 30.26435], [-97.74813, 30.26444], [-97.74845, 30.26453], [-97.74856, 30.26456], [-97.74871, 30.2646], [-97.7489, 30.26465], [-97.74899, 30.26464], [-97.74912, 30.26467], [-97.7499, 30.26489], [-97.75019, 30.26499], [-97.75087, 30.26518], [-97.75107, 30.26524], [-97.7515, 30.26538], [-97.75193, 30.26552], [-97.75224, 30.26561], [-97.75235, 30.26564], [-97.75232, 30.26574], [-97.75218, 30.26613], [-97.7521, 30.26611], [-97.75204, 30.26609]], "type": "LineString"});
+
+        
+    
+        var popup_b94e93f4e17e489ba66463d4968900a8 = L.popup({"maxWidth": 40, "minWidth": 15});
+
+        
+            var html_d4762cf0619e4d8c84b2c35be365b26c = $(`<div id="html_d4762cf0619e4d8c84b2c35be365b26c" style="width: 100.0%; height: 100.0%;"><b>Distance <strong>1.5 Miles || </strong></b><b>Duration <strong>5.1 Mins. </strong></b></div>`)[0];
+            popup_b94e93f4e17e489ba66463d4968900a8.setContent(html_d4762cf0619e4d8c84b2c35be365b26c);
+        
+
+        geo_json_b5ef2f8a7d694b60bb38510bb6f67d56.bindPopup(popup_b94e93f4e17e489ba66463d4968900a8)
+        ;
+
+        
+    
+    
+            var marker_9b41d398313848eca380bcf68236d9bd = L.marker(
+                [30.274665, -97.74035],
+                {}
+            ).addTo(map_10796969489446dbb07ee077bc841a19);
+        
+    
+            var icon_58a9a22542f347739e62811baae47db9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_9b41d398313848eca380bcf68236d9bd.setIcon(icon_58a9a22542f347739e62811baae47db9);
+        
+    
+        var popup_bf6cfc649d564c8ca2fc71f947d908b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_577fb9ec34fd4c9e98870b4236987f91 = $(`<div id="html_577fb9ec34fd4c9e98870b4236987f91" style="width: 100.0%; height: 100.0%;">Texas state capitol building</div>`)[0];
+            popup_bf6cfc649d564c8ca2fc71f947d908b9.setContent(html_577fb9ec34fd4c9e98870b4236987f91);
+        
+
+        marker_9b41d398313848eca380bcf68236d9bd.bindPopup(popup_bf6cfc649d564c8ca2fc71f947d908b9)
+        ;
+
+        
+    
+    
+            var marker_f4c1f43ff5f54d79bd232eacde4c3575 = L.marker(
+                [30.2659279, -97.7517604],
+                {}
+            ).addTo(map_10796969489446dbb07ee077bc841a19);
+        
+    
+            var icon_41e2bc18639c43c68f718d08c9e210da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f4c1f43ff5f54d79bd232eacde4c3575.setIcon(icon_41e2bc18639c43c68f718d08c9e210da);
+        
+    
+        var popup_8e9c420c4e544bc1adb614d170b9ee63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3dc603064896491eb545c3e1b83f6b7d = $(`<div id="html_3dc603064896491eb545c3e1b83f6b7d" style="width: 100.0%; height: 100.0%;">Austin Central Library Special Events Center</div>`)[0];
+            popup_8e9c420c4e544bc1adb614d170b9ee63.setContent(html_3dc603064896491eb545c3e1b83f6b7d);
+        
+
+        marker_f4c1f43ff5f54d79bd232eacde4c3575.bindPopup(popup_8e9c420c4e544bc1adb614d170b9ee63)
+        ;
+
+        
+    
+</script>

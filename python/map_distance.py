@@ -15,19 +15,19 @@ distance_txt = "<b>Distance " + "<strong>"+str(round(res['routes'][0]['summary']
 duration_txt = "<b>Duration " + "<strong>"+str(round(res['routes'][0]['summary']['duration']/60,1))+" Mins. </strong>" +"</b>"
 
 m = folium.Map(location=[30.4027446,-97.7237614],zoom_start=11, control_scale=True)
-folium.GeoJson(decoded).add_child(folium.Popup(distance_txt+duration_txt,min_width=15,max_width=40)).add_to(m)
+#folium.GeoJson(decoded).add_child(folium.Popup(min_width=15,max_width=40)).add_to(m)
 
-folium.Marker(
-    location=list(coords[0][::-1]),
-    popup="Aloft Austin at The Domain",
-    icon=folium.Icon(color="lightgreen"),
-).add_to(m)
+#folium.Marker(
+#    location=list(coords[0][::-1]),
+#    popup="Aloft Austin at The Domain",
+#    icon=folium.Icon(color="lightgreen"),
+#).add_to(m)
 
-folium.Marker(
-    location=list(coords[1][::-1]),
-    popup="Austin Central Library Special Events Center",
-    icon=folium.Icon(color="green"),
-).add_to(m)
+#folium.Marker(
+#    location=list(coords[1][::-1]),
+#    popup="Austin Central Library Special Events Center",
+#    icon=folium.Icon(color="green"),
+#).add_to(m)
 
 m
 
